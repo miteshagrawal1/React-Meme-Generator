@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;  
+  gap: 20px;
+}
+img{
+  width: 40em;
+  height: 40em;
+  border-radius: 10px;
+}
+button{
+  padding: 10px 0;
+  width: 8em;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+  background-color: beige;
+}

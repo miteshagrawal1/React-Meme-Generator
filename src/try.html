@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="" id="img">
+    <p id="para"></p>
+    <button onclick="handleclick()" id="btn">gene</button>
+    <script>
+        let btn = document.getElementById("btn");
+        let img = document.getElementById("img");
+        let para = document.getElementById("para");
+        async function handleclick(){
+            let res = await fetch("https://api.memegen.link/images/");
+            let data = await res.json();
+            console.log(data)
+
+            img.src = data[0].url;
+        }
+    </script>
+</body>
+</html>
